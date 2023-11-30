@@ -9,6 +9,9 @@ import ParentComponent from './Components/Navigation';
 const App = () => {
   const [display, setDisplay] = useState("");
 
+ 
+  
+
   const Heater1 = "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3";
   const Heater2 = "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3";
   const Heater3 = "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3";
@@ -26,68 +29,24 @@ const App = () => {
 
   return (
     <div id="drum-machine">
-
       <ParentComponent displayText={display}/>
 
+      {/* Organize ButtonWithSound components in the specified order */}
       <div className="row">
-          <ButtonWithSound 
-            soundPath={Heater1}
-            buttonText="q"
-            setDisplay={() => setDisplay("Heater 1")}
-          />
-
-          <ButtonWithSound 
-            soundPath={Heater2}
-            buttonText="w"
-            setDisplay={() => setDisplay("Heater 2")}
-          />
-          
-          <ButtonWithSound 
-            soundPath={Heater3}
-            buttonText="e"
-            setDisplay={() => setDisplay("Heater 3")}
-          />
+      <ButtonWithSound soundPath={Heater1} buttonText="Q" setDisplay={setDisplay} />
+      <ButtonWithSound soundPath={Heater2} buttonText="W" setDisplay={setDisplay} />
+      <ButtonWithSound soundPath={Heater3} buttonText="E" setDisplay={setDisplay} />
       </div>
-
       <div className="row">
-          <ButtonWithSound 
-            soundPath={Heater4}
-            buttonText="a"
-            setDisplay={() => setDisplay("Heater 4")}
-          />
-
-          <ButtonWithSound 
-          soundPath={Clap}
-          buttonText="s"
-          setDisplay={() => setDisplay("Clap")}
-          />  
-
-          <ButtonWithSound 
-          soundPath={OpenHH}
-          buttonText="d"
-          setDisplay={() => setDisplay("OpenHH")}
-          />  
+      <ButtonWithSound soundPath={Heater4} buttonText="A" setDisplay={setDisplay} />
+      <ButtonWithSound soundPath={Clap} buttonText="S" setDisplay={setDisplay} />
+      <ButtonWithSound soundPath={OpenHH} buttonText="D" setDisplay={setDisplay} />
       </div>
-
       <div className="row">
-          <ButtonWithSound 
-          soundPath={KicknHat}
-          buttonText="z"
-          setDisplay={() => setDisplay("KicknHat")}
-          />  
-
-          <ButtonWithSound 
-          soundPath={Kick}
-          buttonText="x"
-          setDisplay={() => setDisplay("Kick")}
-          />  
-
-          <ButtonWithSound 
-          soundPath={ClosedHH}
-          buttonText="c"
-          setDisplay={() => setDisplay("ClosedHH")}
-          />  
-      </div>  
+      <ButtonWithSound soundPath={KicknHat} buttonText="Z" setDisplay={setDisplay} />
+      <ButtonWithSound soundPath={Kick} buttonText="X" setDisplay={setDisplay} />
+      <ButtonWithSound soundPath={ClosedHH} buttonText="C" setDisplay={setDisplay} />
+      </div>
     </div>
   );
 };

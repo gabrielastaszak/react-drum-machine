@@ -6,7 +6,7 @@ import ButtonWithSound from './Button';
 const ParentComponent = ({ displayText }) => {
     return (
       <div>
-          <h1>{displayText}</h1>
+          <h1 id="display">{displayText}</h1>
       </div>
     );
   };
