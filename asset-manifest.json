@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gabrielastaszak/react-drum-machine.git/static/css/main.3164c286.css",
+    "main.js": "/gabrielastaszak/react-drum-machine.git/static/js/main.bece9c37.js",
+    "static/js/787.d4aba7ab.chunk.js": "/gabrielastaszak/react-drum-machine.git/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/gabrielastaszak/react-drum-machine.git/index.html",
+    "main.3164c286.css.map": "/gabrielastaszak/react-drum-machine.git/static/css/main.3164c286.css.map",
+    "main.bece9c37.js.map": "/gabrielastaszak/react-drum-machine.git/static/js/main.bece9c37.js.map",
+    "787.d4aba7ab.chunk.js.map": "/gabrielastaszak/react-drum-machine.git/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3164c286.css",
+    "static/js/main.bece9c37.js"
+  ]
+}
