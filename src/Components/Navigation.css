@@ -1,0 +1,14 @@
+h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    text-align: center; /* Wyrównanie tekstu */
+    margin: 40px 0; /* Marginesy: 10px góra i dół, 0 lewo i prawo */
+    padding: 22px 170px;
+    border: 1px solid #393939;
+    border-radius: 8px;
+    width: 205px;
+}
